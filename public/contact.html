@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="roster.html">Roster</a>
+      <a href="videos.html">Videos</a>
+      <a href="fanart.html">Fanart</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <link rel="stylesheet" href="skt.css" />
+  </head>
+  <body style="background-color: rgba(136, 69, 72, 0.87)"></body>
+  <body>
+    <h1>T1 Newsletter Abonnieren!</h1>
+
+    <!-- Vorname und Nachname + Rahmen (fieldset) -->
+    <form>
+      <fieldset>
+        <legend>Kontaktformular:</legend>
+        <label for="firstname">Vorname:</label>
+        <input id="firstname" type="text" placeholder="Vorname eingeben" />
+        <!-- value = den namen in der Textzeile vorgben -->
+        <!-- readonly bedeutet, man kan nur lesen und nichts in dem Feld reinschreiben -->
+        <br /><br />
+
+        <label for="lastname">Nachname:</label>
+        <input id="lastname" type="text" placeholder="Nachname eingeben" />
+        <!-- der befehl disabled wird ausgeblendet und man kann das Feld nicht mehr anklicken. -->
+        <br /><br />
+
+        <!-- Email -->
+        <label for="email">E-Mail:</label>
+        <input id="email" type="email" placeholder="max@mustermann.de" />
+        <br /><br />
+
+        <!-- PASSWORD -->
+        <label for="password">Passwort*:</label>
+        <input
+          id="password"
+          type="password"
+          size="40"
+          placeholder="password"
+          required
+        />
+        <!-- size = in dem Beispiel 40 zeichen für das passwort -->
+        <br /><br />
+
+        <!-- DATUM -->
+        <label>Geboren am:</label><br />
+        <input type="date" /><br /><br />
+
+        <!-- Frage auswählbar (radio) -->
+        <label>Wie lange bist du schon T1 Fan?</label>
+        <br />
+        <label>1-3 Jahre</label>
+        <input name="1-3" type="radio" />
+        <label>3-5 Jahre</label>
+        <input name="3-5" type="radio" />
+        <label>5-10 Jahre Jahre</label>
+        <input name="5-10" type="radio" />
+        <br /><br />
+
+        <!-- Frage anklickbar -->
+        <label>Hier akzeptierst du den Newsletter</label><br />
+        <label>Newsletter abbonieren</label>
+        <input type="checkbox" value="Basketball Spielen" /><br /><br />
+        <input type="submit" />
+
+        <!--  -->
+        <h1>Wer ist dein Lieblingsspieler?(wähle aus)</h1>
+        <select name="" id="">
+          <option value="">Faker</option>
+          <option value="">Zeus</option>
+          <option value="">Oner</option>
+          <option value="">Gumayusi</option>
+          <option value="">Keria</option></select
+        ><br /><br />
+
+        <!-- TEXT AREA -->
+        <!-- maxlength = mindestanzahl von Zeichen, die ich in die Text-Area eingeben kann -->
+        <!-- placeholder (beschreibt wieviele Zeichen ich in diese Box reinschreiben kann) -->
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          maxlength="50"
+          placeholder="Beschreibe kurz was dich zu einem echten T1 Fan auszeichnet(50 Zeichen)"
+        ></textarea>
+        <input type="submit" />
+        <img
+          src="img/t1fight.png"
+          alt="T1background"
+          width="300"
+          height="auto"
+        />
+      </fieldset>
+    </form>
+    <a href="index.html" onclick="history.back(); return true;">Zurück</a>
+  </body>
+</html>

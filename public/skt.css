@@ -1,0 +1,46 @@
+/* Background Farbe */
+body {
+  background-color: black;
+
+  /* Überschrift 1 */
+}
+#topueberschriftone {
+  color: rgb(233, 3, 3);
+  text-align: center;
+}
+
+/* Überschrift 2 */
+#topueberschrifttwo {
+  color: red;
+  text-align: center;
+}
+
+/* NAVIGATIONSBAR */
+.navbar {
+  background-color: #923333;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(26, 4, 4);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* T1 Roster Container (Spieler Mittig) */
+.t1container {
+  text-align: center;
+  color: rgb(248, 239, 239);
+  font-size: 30px;
+}
